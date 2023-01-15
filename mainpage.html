@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color: rgb(255);">
+
+    <div class="topnav">
+        <div class = "homeButton">
+            <a href = "mainpage.html">FIVE AND DIME</a>
+        </div>
+        <div class = "topRightButtons"> 
+            <a href = "uploadProduct.html">Sell product</a>
+            <a href = "shoppingcart.html">Shopping Cart</a>
+            <a href = "profile.html">Account</a>
+        </div>
+    </div>
+ 
+    <br>
+    <br>
+    <center>
+        <h2>Search for a product: </h2>
+        Enter the name:
+        <form id="search">
+            <input type='text' id='searchText' />
+        </form> <br>
+        Enter the prefered prices: <br>
+        from <input type='number' id='lowestPrice' /> <br>
+        to <input type='number' id='highestPrice' /> <br>
+        <br>
+        Enter the supplier:<br>
+        <input type='text' id='supplier'/><br>
+        <br>Enter the minimal rating: <br>
+        from <input type='number' id='minimalrating' /><br>
+        <br>
+        <input type='submit' onclick="document.location='search.html'" value='Search' />
+        <br>
+        <br>
+        <h2>Add a product for sale:</h2>
+        <input type='submit' onclick="document.location='uploadProduct.html'" value='Add product' />
+    </center>
+</body>
+</html>

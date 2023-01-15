@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload product</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="topnav">
+       
+        <div class = "homeButton">
+            <a href = "mainpage.html">FIVE AND DIME</a>
+        </div>
+        <div class = "topRightButtons"> 
+            <a href = "uploadProduct.html">Sell product</a>
+            <a href = "shoppingcart.html">Shopping Cart</a>
+            <a href = "profile.html">Account</a>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <h2>Upload product for sale</h2>
+
+    <form style="margin-left: 20pt">
+
+        <label for="produtcName">Name: </label> <br>
+        <input type = "text" id = "produtcName" name = "produtcName"> <br>
+
+        <label for="productPrice">Price: </label> <br>
+        <input type = "number" id = "productPrice" name = "productPrice"> <br>
+
+        <label for="productQuantity">Quantity: </label> <br>
+        <input type = "number" id = "productQuantity" name = "productQuantity"> <br>
+
+        <label for="productDescription">Description: </label> <br>
+        <textarea name = "productDescription" id = "productDescription" rows = "5"></textarea> <br>
+
+        <label for="productCategory">Category: </label> <br>
+        <input type = "productCategory" id = "productCategory" name = "productCategory"> <br>
+      
+        <label for="productCondition">Condition: </label> <br>
+        <select name = "productCondition" id = "productCondition">
+            <option>
+                <option value="new">New</option>
+                <option value="usedGoodCondition">Used, in good condition</option>
+                <option value="used">Used</option>
+            </option>
+        </select> <br>
+
+        <label for="productPicture">Upload a picture of the product:</label> <br>
+
+        <input type="file"   id="productPicture" 
+        name="productPicture" accept="image/png, image/jpeg">
+
+        <br>
+
+        <input type = "submit" value = "Upload">
+
+    </form>
+
+</body>
+
+</html>
+
+
